@@ -850,6 +850,23 @@ func aggregate(a aggregateParams) (*Cursor, error) {
 		return nil, replaceErrors(err)
 	}
 
+	batch := op.ResultCursorResponse().FirstBatch
+	if batch == nil {
+		return nil, errors.New("invalid response from server, no 'firstBatch' field")
+	}
+
+	docs, err := batch.Documents()
+	if err != nil || len(docs) == 0 {
+		return nil, nil
+	}
+
+	val, ok := docs[0].Lookup("n").AsInt64OK()
+	if !ok {
+		return nil, errors.New("invalid response from server, no 'n' field")
+	}
+
+	fmt.Println(val)
+
 	bc, err := op.Result(cursorOpts)
 	if err != nil {
 		closeImplicitSession(sess)
