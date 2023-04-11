@@ -12,7 +12,7 @@ import (
 	"reflect"
 	"sync"
 
-	"go.mongodb.org/mongo-driver/bson/bsontype"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/bson/bsontype"
 )
 
 // ErrNilType is returned when nil is passed to either LookupEncoder or LookupDecoder.
@@ -469,6 +469,6 @@ type interfaceValueEncoder struct {
 }
 
 type interfaceValueDecoder struct {
-	i  reflect.Type
+	i reflect.Type
 	vd ValueDecoder
 }

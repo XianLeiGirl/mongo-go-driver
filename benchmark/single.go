@@ -10,10 +10,10 @@ import (
 	"context"
 	"errors"
 
-	"go.mongodb.org/mongo-driver/internal/testutil"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
-	"go.mongodb.org/mongo-driver/x/bsonx"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/internal/testutil"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/options"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/bsonx"
 )
 
 const (

@@ -13,12 +13,12 @@ import (
 	"errors"
 	"fmt"
 
-	"go.mongodb.org/mongo-driver/event"
-	"go.mongodb.org/mongo-driver/mongo/description"
-	"go.mongodb.org/mongo-driver/mongo/writeconcern"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
-	"go.mongodb.org/mongo-driver/x/mongo/driver"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/session"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/event"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/description"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/writeconcern"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/mongo/driver"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/mongo/driver/session"
 )
 
 // DropCollection performs a drop operation.

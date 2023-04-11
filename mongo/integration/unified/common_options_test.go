@@ -10,11 +10,11 @@ import (
 	"fmt"
 	"time"
 
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/mongo/readconcern"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
-	"go.mongodb.org/mongo-driver/mongo/writeconcern"
-	"go.mongodb.org/mongo-driver/tag"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/bson"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/readconcern"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/readpref"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/writeconcern"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/tag"
 )
 
 // This file defines helper types to convert BSON documents to ReadConcern, WriteConcern, and ReadPref objects.

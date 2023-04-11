@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"go.mongodb.org/mongo-driver/internal/testutil/assert"
-	"go.mongodb.org/mongo-driver/mongo/address"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/operation"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/internal/testutil/assert"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/address"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/mongo/driver/operation"
 )
 
 func TestPool(t *testing.T) {

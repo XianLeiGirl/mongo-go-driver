@@ -17,11 +17,11 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"go.mongodb.org/mongo-driver/internal"
-	"go.mongodb.org/mongo-driver/internal/testutil/assert"
-	"go.mongodb.org/mongo-driver/mongo/address"
-	"go.mongodb.org/mongo-driver/mongo/description"
-	"go.mongodb.org/mongo-driver/x/mongo/driver"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/internal"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/internal/testutil/assert"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/address"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/description"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/mongo/driver"
 )
 
 type testHandshaker struct {

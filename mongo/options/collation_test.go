@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
 )
 
 func TestCollation(t *testing.T) {

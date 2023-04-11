@@ -11,7 +11,7 @@ import (
 	"context"
 	"fmt"
 
-	"go.mongodb.org/mongo-driver/bson"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/bson"
 )
 
 type CommandMonitoringEvent struct {

@@ -4,12 +4,13 @@
 // not use this file except in compliance with the License. You may obtain
 // a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
+//go:build !cse
 // +build !cse
 
 package mongocrypt
 
 import (
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
 )
 
 // Context represents a mongocrypt_ctx_t handle

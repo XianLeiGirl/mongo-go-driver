@@ -28,11 +28,11 @@ functions:
     - command: git.get_project
       type: system
       params:
-        directory: src/go.mongodb.org/mongo-driver
+        directory: src/github.com/xianleigirl/go.mongodb.org/mongo-driver
     # Make an evergreen expansion file with dynamic values
     - command: shell.exec
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/xianleigirl/go.mongodb.org/mongo-driver
         script: |
           if [ "Windows_NT" = "$OS" ]; then
              export GOPATH=$(cygpath -w $(dirname $(dirname $(dirname `pwd`))))
@@ -114,7 +114,7 @@ functions:
     # Load the expansion file to make an evergreen variable with the current unique version
     - command: expansions.update
       params:
-        file: src/go.mongodb.org/mongo-driver/expansion.yml
+        file: src/github.com/xianleigirl/go.mongodb.org/mongo-driver/expansion.yml
 
   prepare-resources:
     - command: shell.exec
@@ -131,7 +131,7 @@ functions:
           echo "{ \"releases\": { \"default\": \"$MONGODB_BINARIES\" }}" > $MONGO_ORCHESTRATION_HOME/orchestration.config
     - command: shell.exec
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/xianleigirl/go.mongodb.org/mongo-driver
         script: |
           ${PREPARE_SHELL}
 
@@ -270,7 +270,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/xianleigirl/go.mongodb.org/mongo-driver
         script: |
           ${PREPARE_SHELL}
           ${BUILD_ENV|} make ${targets} BUILD_TAGS="-tags \"cse gssapi\""
@@ -279,7 +279,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/xianleigirl/go.mongodb.org/mongo-driver
         script: |
           ${PREPARE_SHELL}
 
@@ -342,14 +342,14 @@ functions:
     - command: json.send
       params:
         name: perf
-        file: src/go.mongodb.org/mongo-driver/perf.json
+        file: src/github.com/xianleigirl/go.mongodb.org/mongo-driver/perf.json
 
   run-enterprise-auth-tests:
     - command: shell.exec
       type: test
       params:
         silent: true
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/xianleigirl/go.mongodb.org/mongo-driver
         script: |
           # DO NOT ECHO WITH XTRACE (which PREPARE_SHELL does)
           if [ "Windows_NT" = "$OS" ]; then
@@ -369,7 +369,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/xianleigirl/go.mongodb.org/mongo-driver
         script: |
           # DO NOT ECHO WITH XTRACE (which PREPARE_SHELL does)
           if [ "Windows_NT" = "$OS" ]; then
@@ -396,7 +396,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/xianleigirl/go.mongodb.org/mongo-driver
         script: |
           # DO NOT ECHO WITH XTRACE (which PREPARE_SHELL does)
           if [ "Windows_NT" = "$OS" ]; then
@@ -423,7 +423,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/xianleigirl/go.mongodb.org/mongo-driver
         script: |
           # DO NOT ECHO WITH XTRACE (which PREPARE_SHELL does)
           if [ "Windows_NT" = "$OS" ]; then
@@ -453,7 +453,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/xianleigirl/go.mongodb.org/mongo-driver
         script: |
           ${PREPARE_SHELL}
           export MONGO_GO_DRIVER_CA_FILE="$DRIVERS_TOOLS/.evergreen/ocsp/${OCSP_ALGORITHM}/ca.pem"
@@ -473,7 +473,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/xianleigirl/go.mongodb.org/mongo-driver
         script: |
           ${PREPARE_SHELL}
           set +o xtrace
@@ -726,7 +726,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/xianleigirl/go.mongodb.org/mongo-driver
         script: |
           ${PREPARE_SHELL}
           if [ "${SKIP_ECS_AUTH_TEST}" = "true" ]; then
@@ -770,7 +770,7 @@ post:
   - command: gotest.parse_files
     params:
       files:
-        - "src/go.mongodb.org/mongo-driver/*.suite"
+        - "src/github.com/xianleigirl/go.mongodb.org/mongo-driver/*.suite"
   - func: upload-mo-artifacts
   - func: cleanup
 

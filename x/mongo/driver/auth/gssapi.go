@@ -4,8 +4,9 @@
 // not use this file except in compliance with the License. You may obtain
 // a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
-//+build gssapi
-//+build windows linux darwin
+//go:build gssapi && (windows || linux || darwin)
+// +build gssapi
+// +build windows linux darwin
 
 package auth
 
@@ -14,7 +15,7 @@ import (
 	"fmt"
 	"net"
 
-	"go.mongodb.org/mongo-driver/x/mongo/driver/auth/internal/gssapi"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/mongo/driver/auth/internal/gssapi"
 )
 
 // GSSAPI is the mechanism name for GSSAPI.

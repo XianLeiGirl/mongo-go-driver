@@ -19,12 +19,12 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"go.mongodb.org/mongo-driver/bson/bsonrw"
-	"go.mongodb.org/mongo-driver/bson/bsonrw/bsonrwtest"
-	"go.mongodb.org/mongo-driver/bson/bsontype"
-	"go.mongodb.org/mongo-driver/bson/primitive"
-	"go.mongodb.org/mongo-driver/internal/testutil/assert"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/bson/bsonrw"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/bson/bsonrw/bsonrwtest"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/bson/bsontype"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/bson/primitive"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/internal/testutil/assert"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
 )
 
 var (

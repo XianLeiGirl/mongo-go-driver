@@ -9,9 +9,9 @@ package mgocompat
 import (
 	"reflect"
 
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/bson/bsoncodec"
-	"go.mongodb.org/mongo-driver/bson/bsonrw"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/bson"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/bson/bsoncodec"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/bson/bsonrw"
 )
 
 // Setter interface: a value implementing the bson.Setter interface will receive the BSON

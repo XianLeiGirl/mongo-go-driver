@@ -4,7 +4,7 @@
 // not use this file except in compliance with the License. You may obtain
 // a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
-package options // import "go.mongodb.org/mongo-driver/mongo/options"
+package options // import "github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/options"
 
 import (
 	"bytes"
@@ -19,16 +19,16 @@ import (
 	"strings"
 	"time"
 
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/bson/bsoncodec"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/event"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/readconcern"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/readpref"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/writeconcern"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/tag"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/mongo/driver"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/mongo/driver/connstring"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/mongo/driver/wiremessage"
 	"github.com/youmark/pkcs8"
-	"go.mongodb.org/mongo-driver/bson/bsoncodec"
-	"go.mongodb.org/mongo-driver/event"
-	"go.mongodb.org/mongo-driver/mongo/readconcern"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
-	"go.mongodb.org/mongo-driver/mongo/writeconcern"
-	"go.mongodb.org/mongo-driver/tag"
-	"go.mongodb.org/mongo-driver/x/mongo/driver"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/connstring"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/wiremessage"
 )
 
 // ContextDialer is an interface that can be implemented by types that can create connections. It should be used to

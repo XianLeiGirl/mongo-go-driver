@@ -10,7 +10,7 @@ import (
 	"context"
 	"errors"
 
-	"go.mongodb.org/mongo-driver/mongo/description"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/description"
 )
 
 // ExecuteExhaust reads a response from the provided StreamerConnection. This will error if the connection's

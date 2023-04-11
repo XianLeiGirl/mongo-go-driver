@@ -15,8 +15,8 @@ import (
 	"math"
 	"sync"
 
-	"go.mongodb.org/mongo-driver/bson/bsontype"
-	"go.mongodb.org/mongo-driver/bson/primitive"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/bson/bsontype"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/bson/primitive"
 )
 
 var _ ValueReader = (*valueReader)(nil)

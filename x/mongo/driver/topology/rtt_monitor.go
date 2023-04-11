@@ -11,8 +11,8 @@ import (
 	"sync"
 	"time"
 
-	"go.mongodb.org/mongo-driver/x/mongo/driver"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/operation"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/mongo/driver"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/mongo/driver/operation"
 )
 
 const (

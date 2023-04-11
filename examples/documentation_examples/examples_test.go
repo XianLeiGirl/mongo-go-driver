@@ -15,14 +15,14 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
-	"go.mongodb.org/mongo-driver/examples/documentation_examples"
-	"go.mongodb.org/mongo-driver/internal/testutil"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/description"
-	"go.mongodb.org/mongo-driver/mongo/options"
-	"go.mongodb.org/mongo-driver/x/bsonx"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/connstring"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/topology"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/examples/documentation_examples"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/internal/testutil"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/description"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/options"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/bsonx"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/mongo/driver/connstring"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/x/mongo/driver/topology"
 )
 
 func TestDocumentationExamples(t *testing.T) {

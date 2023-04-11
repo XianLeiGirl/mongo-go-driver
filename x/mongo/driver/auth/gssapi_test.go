@@ -4,7 +4,8 @@
 // not use this file except in compliance with the License. You may obtain
 // a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
-//+build gssapi
+//go:build gssapi
+// +build gssapi
 
 package auth
 
@@ -12,8 +13,8 @@ import (
 	"context"
 	"testing"
 
-	"go.mongodb.org/mongo-driver/mongo/address"
-	"go.mongodb.org/mongo-driver/mongo/description"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/address"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/description"
 )
 
 func TestGSSAPIAuthenticator(t *testing.T) {

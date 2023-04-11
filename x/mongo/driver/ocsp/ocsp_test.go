@@ -4,6 +4,7 @@
 // not use this file except in compliance with the License. You may obtain
 // a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
+//go:build go1.13
 // +build go1.13
 
 package ocsp
@@ -14,7 +15,7 @@ import (
 	"errors"
 	"testing"
 
-	"go.mongodb.org/mongo-driver/internal/testutil/assert"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/internal/testutil/assert"
 )
 
 func TestOCSP(t *testing.T) {

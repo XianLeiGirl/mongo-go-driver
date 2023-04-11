@@ -15,11 +15,11 @@ import (
 	"testing"
 	"time"
 
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/internal/testutil/assert"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/integration/mtest"
-	"go.mongodb.org/mongo-driver/mongo/options"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/bson"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/internal/testutil/assert"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/integration/mtest"
+	"github.com/xianleigirl/go.mongodb.org/mongo-driver/mongo/options"
 )
 
 func TestSDAMErrorHandling(t *testing.T) {
@@ -34,7 +34,7 @@ func TestSDAMErrorHandling(t *testing.T) {
 	baseMtOpts := func() *mtest.Options {
 		mtOpts := mtest.NewOptions().
 			Topologies(mtest.ReplicaSet). // Don't run on sharded clusters to avoid complexity of sharded failpoints.
-			MinServerVersion("4.0").      // 4.0+ is required to use failpoints on replica sets.
+			MinServerVersion("4.0"). // 4.0+ is required to use failpoints on replica sets.
 			ClientOptions(baseClientOpts())
 
 		if mtest.ClusterTopologyKind() == mtest.Sharded {
